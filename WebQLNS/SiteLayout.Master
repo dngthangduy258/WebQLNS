@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteLayout.master.cs" Inherits="WebQLNS.SiteLayout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Navbar</a>     
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="qlNhanVien.aspx">Quản lý nhân viên</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="qlPhongBan.aspx">Quản lý phòng ban</a>
+                        </li>                                              
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-1" type="text" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="card-body" style="min-height: 500px">
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="card-footer bg-info">
+            Dương Thanh Duy - 2221160053
+        </div>
+
+</body>
+</html>
